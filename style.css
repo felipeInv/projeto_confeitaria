@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
     min-height: 100vh;
@@ -54,13 +54,16 @@ header img{
 
 /*************************************************************************************/
 
-section.sobre_nos{
+.fundo_blue{
     padding: 50px;
+    background-image: url("img/padrao_doces.png");
+    background-color: #84DBDE;
+}
+
+section.sobre_nos{
     display: grid;
     flex-direction: row;
     grid-template-columns: 4fr 5fr;
-    background-image: url("img/padrao_doces.png");
-    background-color: #84DBDE;
 }
 
 .sobre_nos .titulo{
@@ -74,13 +77,29 @@ section.sobre_nos{
 section.sobre_nos .texto_icone{
     display: flex;
     flex-direction: row;
-    margin: 25px 50px 25px 50px;
+    margin: 25px 100px 25px 0;
     justify-content: space-between;
+    align-items: center;
 }
 
 section.sobre_nos .texto_icone p{
     width: 400px;
-    margin: 40px;
+    margin: 30px 0px 0px 0;
     font-size: 1.2em;
     text-indent: 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.493);
+    text-align: center;
+}
+
+/*************************************************************************************/
+
+.fundo_bolo2{
+    height: 500px;
+    background-image: url("img/fundo_bolo_churros.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
 }
