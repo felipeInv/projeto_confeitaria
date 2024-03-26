@@ -16,7 +16,6 @@ body{
 
 header{ 
     display: grid;
-    width: 100vw;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.555);
     border-radius: 0 0 25px 25px;
     padding: 10px;
@@ -47,7 +46,6 @@ header img{
 
 .fundo_bolo1{
     height: 500px;
-    width: 100%;
     background-image: url("img/fundo_bolo_chocolate_confeitado.jpg");
     background-size: cover;
     background-position: center bottom;
@@ -57,25 +55,32 @@ header img{
 /*************************************************************************************/
 
 section.sobre_nos{
-    width: 100vw;
+    padding: 50px;
     display: grid;
     flex-direction: row;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 4fr 5fr;
+    background-image: url("img/padrao_doces.png");
+    background-color: #84DBDE;
 }
 
-.sobre_nos *{
-    margin: 30px;
+.sobre_nos .titulo{
+    font-size: 2em;
+    color: #00676A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section.sobre_nos .texto_icone{
     display: flex;
     flex-direction: row;
+    margin: 25px 50px 25px 50px;
+    justify-content: space-between;
 }
 
 section.sobre_nos .texto_icone p{
-    width: 300px;
-}
-
-.sobre_nos:nth-child(1){
-    width: 40vw;
+    width: 400px;
+    margin: 40px;
+    font-size: 1.2em;
+    text-indent: 10px;
 }
